@@ -1,0 +1,23 @@
+1- As soon as the correct password is entered, the program decrypts the text files using the 'decrypt' function. The files get encrypted using the 'encrypt' function when the user exits the application using the exit prompt.
+
+2- The correct password is hidden in the source code using the 'passwordsys' function which increases security as even if someone gets a hold of the source code, the password is not visible.
+
+3- The user gets to choose between checking inventory, outgoing shipments, incoming shipments, shipment history or exiting the application using the on-screen prompts.
+
+4- The 'fill' function retrieves data from the text files stores them into lists which are returned by the function.
+
+5- The inventory tab shows all of the available packages aboard the spacestation and users get a choice between adding an item, removing an item or sorting the list according to ID or NAME. All of this data is stored in 'inventory.txt' file which gets encrypted when the user exits the application.
+
+6- The outgoing tab shows all of the packages being sent from the spacestation back to earth. if the user decides to send a packages, the spacestation inventory is displayed and the user gets to choose which item he wishes to send back to earth. 
+
+7- The time and date of leaving of the outgoing shipment is recorded along with the estimated time and date of arrival which is set to be 2 hours and 15 minutes after the time of leaving. Once the shipment reaches earth. The ETA shows arrived and the shipment is removed from the 'outgoing.txt' and the record is added to the 'history.txt' file as outgoing. The 'outgoing.txt' file records the ID, time of leaving, date of leaving, time of arrival, date of arrival, and the name of the shipment. This file too, is encrypted when the user exits the application.
+
+8- The incoming tab shows all of the packages being sent from Earth to the spacestation. The user enters the ID of a package that is going to be sent to the spacestation and the time of leaving earth is recorded. The time of arrival is also recorded which is set to be 2h15m after the time of leaving earth. 
+
+9- Once the incoming shipment reaches the space station, the ETA shows arrived and the shipment is then added to the spacestation inventory in the 'inventory.txt' file and is removed from the 'incoming.txt' file. This shipment is recorded in the 'history.txt' file as incoming. The 'incoming.txt' gets encrypted when the user exits the program
+
+10- The searching tab asks the user for the ID of the item they wish to search for. The program then goes through all of the files until that item is found. The status, location and name of the item is displayed on screen. If the item is not found, the user is notified.
+
+11- The history tab shows all shipments to and from the spacestation which allows for a record to be made. These shipments are recorded in the 'history.txt' file. This file is also encrypted when the user exits the program.
+
+12- When the user selects exit, all four of the above mentioned text files get encrypted which increases security of the records and prevents them to fall into unwanted hands. The files are decrypted once the user enters the correct password upon entering the program. After encryption, the application closes.
